@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#display {
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+#buttons {
+    justify-self: center;
+}
