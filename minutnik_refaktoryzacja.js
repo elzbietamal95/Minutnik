@@ -6,14 +6,26 @@ let time = document.getElementById("time"),
     minutes = 5,
     countingDown = null;
 
+function padWithZero(number) {
+    return ((number > 9) ? number : "0" + number);
+}
+
+function formatTime(minutes, seconds) {
+    return padWithZero(minutes) + ":" + padWithZero(seconds);
+}
+
+function setTime(minutes, seconds) {
+    time.innerText = formatTime(minutes,seconds);
+}
+
 function subtract() {
     seconds--;
     if(seconds < 0) {
         seconds = 59;
         minutes--;
     }
-    console.log(minutes + ":" + seconds);
-    time.innerText = ((minutes > 9) ? minutes : "0" + minutes) + ":" + ((seconds > 9) ? seconds : "0" + seconds);
+    console.log(formatTime(minutes, seconds));
+    setTime(minutes, seconds);
     if (seconds === 0 && minutes === 0) {
         clearInterval(countingDown);
     }
@@ -37,5 +49,5 @@ reset.onclick = function() {
     countingDown = null;
     minutes = 5;
     seconds = 0;
-    time.innerText = "0" + minutes +":" + "0" + seconds;
+    setTime(minutes, seconds);
 }

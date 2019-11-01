@@ -6,11 +6,30 @@ body {
     height: 100%;
 }
 
-#display {
-    font-size: 5rem;
-    font-family: sans-serif;
+.timer {
+    width: 208px;
+    background: gainsboro;
+    position: relative;
+    margin: 40px auto;
+    padding: 10px 10px 0;
 }
 
-#buttons {
-    justify-self: center;
+#time {
+    font-size: 5rem;
+    font-family: sans-serif;
+    text-align: center;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    background: darkgray;
+}
+
+/*moze byc bez .buttons gdyby wszystkie buttony mialy byc takie same*/
+.buttons button {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
