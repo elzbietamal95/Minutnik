@@ -7,23 +7,27 @@ body {
 }
 
 .timer {
-    width: 230px;
+    width: 240px;
     background: gainsboro;
     position: relative;
     margin: 50px auto;
-    padding: 15px 10px 0;
+    padding: 15px 0 0;
+    border: 5px groove darkgray;
 }
 
 #time {
     font-size: 4.8rem;
     font-family: "Rubik";
     text-align: center;
+    height: 80px;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
     background: darkgray;
+    border-top: 2px solid white;
+    height: 32px;
 }
 
 /*moze byc bez .buttons gdyby wszystkie buttony mialy byc takie same*/
@@ -33,5 +37,8 @@ body {
     font-weight: bold;
     font-family: "Rubik";
     font-size: 1em;
+    height: max-content;
+    width: 70px;
+    margin: auto;
 }
 
