@@ -7,20 +7,20 @@ body {
 }
 
 .timer {
-    width: 240px;
+    width: 340px;
     background: gainsboro;
     position: relative;
     margin: 50px auto;
     padding: 15px 0 0;
-    border: 5px groove darkgray;
+    border: 6px groove darkgray;
     border-radius: 7px;
 }
 
 #time {
-    font-size: 4.8rem;
+    font-size: 6.2rem;
     font-family: "Rubik";
     text-align: center;
-    height: 80px;
+    height: 110px;
 }
 
 .buttons {
@@ -28,19 +28,26 @@ body {
     justify-content: space-around;
     background: darkgray;
     border-top: 2px solid white;
-    height: 32px;
+    height: 40px;
 }
 
 /*moze byc bez .buttons gdyby wszystkie buttony mialy byc takie same*/
 .buttons button {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     font-weight: bold;
     font-family: "Rubik";
-    font-size: 1em;
+    font-size: 1.3em;
     height: max-content;
-    width: 70px;
+    width: 100px;
     margin: auto;
     border-radius: 5px;
 }
+
+.buttons button:hover {
+    background: black;
+    color: white;
+}
+
+
 
